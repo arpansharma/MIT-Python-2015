@@ -20,7 +20,6 @@ print "Remaining balance: " + str(round(balance,2))
 
 
 
-
 # Paste your code into this box
 min = 10
 temp = balance
