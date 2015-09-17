@@ -1,4 +1,3 @@
-
 # Paste your code into this box 
 count = 0
 for a in s:
