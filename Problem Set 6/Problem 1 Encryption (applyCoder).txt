@@ -1,0 +1,17 @@
+
+def applyCoder(text, coder):
+    """
+    Applies the coder to the text. Returns the encoded text.
+    text: string
+    coder: dict with mappings of characters to shifted characters
+    returns: text after mapping coder chars to original text
+    """
+    final = ""
+
+    for l in text:
+        if not (l in string.punctuation or l == " " or l in str(range(10))):
+            final += coder[l]
+        else:
+            final += l
+
+    return final
