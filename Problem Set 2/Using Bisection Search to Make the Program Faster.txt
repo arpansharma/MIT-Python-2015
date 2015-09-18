@@ -1,0 +1,23 @@
+# Paste your code into this box
+
+e=0.01
+temp=balance
+r=annualInterestRate/12.0
+lb=balance/12.0
+ub=(balance*(1+r)**12)/12.0
+Minimummonthlypayment=(lb+ub)/2.0  
+  
+while(abs(balance)>=e):
+    balance=temp
+    for i in range(1,13):
+        balance = (balance) - (Minimummonthlypayment)
+        balance = balance + (r * balance)
+    
+    if(balance<0):
+        ub=Minimummonthlypayment
+    else:
+        lb=Minimummonthlypayment
+        
+    Minimummonthlypayment=(lb+ub)/2.0
+    
+print 'Lowest Payment: '+str(round(Minimummonthlypayment,2))    
