@@ -1,3 +1,4 @@
+
 def radiationExposure(start, stop, step):
     '''
     Computes and returns the amount of radiation exposed
