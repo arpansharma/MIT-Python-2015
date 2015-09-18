@@ -1,0 +1,13 @@
+def uniqueValues(aDict):
+    '''
+    aDict: a dictionary
+    returns: a sorted list of keys that map to unique aDict values, empty list if none
+    '''
+    # Your code here
+    countMap = {}
+    for v in aDict.itervalues():
+        countMap[v] = countMap.get(v,0) + 1
+    uni = [ k for k, v in aDict.iteritems() if countMap[v] == 1]
+    
+    uni.sort()
+    return uni
