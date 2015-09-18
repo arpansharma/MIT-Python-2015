@@ -1,0 +1,18 @@
+# Paste your code into this box 
+count = 0
+i = 0
+l = len(s)
+while True:
+    if l - i < 3:
+        break
+    if s[i] == 'b':
+        w = s[i:i + 3]
+        if w == 'bob':
+            count += 1
+            i += 2
+        else:
+            i += 1
+    else:
+        i += 1
+            
+print "Number of times 'bob' occurs is: " + str(count)
