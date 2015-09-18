@@ -1,0 +1,15 @@
+# Paste your function here
+
+def keysWithValue(aDict, target):
+    '''
+    aDict: a dictionary
+    target: an integer
+    '''
+    # Your code here  
+    
+    bDict = []
+    for b in aDict:
+        if aDict[b] == target:
+            bDict.append(b)
+    return sorted(bDict)       
+        

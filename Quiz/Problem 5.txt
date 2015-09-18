@@ -1,0 +1,9 @@
+# Paste your function here
+
+def lessThan4(aList):
+    bList = []
+
+    for a in aList:
+        if len(a) < 4:
+            bList.append(a)
+    return bList
